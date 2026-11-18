@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Cyberfort - CSS Text Styles and Layouts</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Quicksand", Arial, sans-serif;
+            background: linear-gradient(#071426, #0b2340, #102e50);
+            color: #eaf6ff;
+            padding: 30px;
+            line-height: 1.7;
+        }
+
+        /* HEADER */
+
+        header {
+            background: rgba(5, 18, 35, 0.9);
+            border: 1px solid #42e8ff;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-family: "Orbitron", sans-serif;
+            font-size: 32px;
+            color: #42e8ff;
+        }
+
+        header p {
+            color: #c4dcec;
+            font-size: 16px;
+        }
+
+        /* MAIN TITLE */
+
+        h2 {
+            font-family: "Orbitron", sans-serif;
+            font-size: 24px;
+            color: #42e8ff;
+            margin-bottom: 15px;
+        }
+
+        .intro {
+            background: rgba(255, 255, 255, 0.06);
+            border-left: 4px solid #42e8ff;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .intro p {
+            font-size: 18px;
+            color: #c4dcec;
+            line-height: 1.8;
+        }
+
+        hr {
+            border: 1px solid rgba(66, 232, 255, 0.4);
+            margin: 25px 0;
+        }
+
+        /* FLEXBOX LAYOUT */
+
+        .container {
+            display: flex;
+            gap: 25px;
+            align-items: stretch;
+            margin-top: 25px;
+        }
+
+        /* SIDEBAR */
+
+        .sidebar {
+            flex: 1;
+            background: rgba(5, 18, 35, 0.9);
+            border: 1px solid #42e8ff;
+            border-radius: 12px;
+            padding: 25px;
+        }
+
+        .sidebar p {
+            font-style: italic;
+            color: #c4dcec;
+            font-size: 16px;
+        }
+
+        .sidebar ul {
+            margin: 15px 0 0 20px;
+            color: #c4dcec;
+        }
+
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+
+        /* MAIN CONTENT */
+
+        .main-content {
+            flex: 2;
+            background: rgba(255, 255, 255, 0.07);
+            border: 1px solid rgba(66, 232, 255, 0.5);
+            border-radius: 12px;
+            padding: 25px;
+        }
+
+        .main-content p {
+            font-size: 17px;
+            line-height: 1.8;
+            color: #c4dcec;
+        }
+
+        /* HOVER EFFECT */
+
+        .sidebar,
+        .main-content {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .sidebar:hover,
+        .main-content:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(66, 232, 255, 0.2);
+        }
+
+        /* FOOTER */
+
+        footer {
+            margin-top: 35px;
+            padding: 20px;
+            text-align: center;
+            background: #051326;
+            border-top: 1px solid #42e8ff;
+            border-radius: 10px;
+            color: #b8c4dc;
+        }
+
+        /* RESPONSIVE DESIGN */
+
+        @media (max-width: 650px) {
+
+            body {
+                padding: 15px;
+            }
+
+            .container {
+                flex-direction: column;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+        <h1>🛡️ CYBERFORT</h1>
+        <p>Securing Your Digital World with Confidence</p>
+    </header>
+
+    <!-- INTRODUCTION -->
+
+    <section class="intro">
+
+        <h2>CSS Text Styles and Layouts</h2>
+
+        <hr>
+
+        <h2>Cyberfort – Cybersecurity Services</h2>
+
+        <p>
+            Cyberfort is a cybersecurity company that provides
+            reliable security solutions to protect digital assets,
+            data, networks and computer systems from cyber threats.
+            Our goal is to create a safer digital environment
+            through advanced security practices.
+        </p>
+
+    </section>
+
+    <!-- FLEXBOX CONTAINER -->
+
+    <div class="container">
+
+        <!-- SIDEBAR -->
+
+        <div class="sidebar">
+
+            <h2>Sidebar</h2>
+
+            <p>
+                Cyberfort focuses on protecting important digital
+                information and helping users stay safe from
+                online threats.
+            </p>
+
+            <ul>
+                <li>Network Security</li>
+                <li>Data Protection</li>
+                <li>Threat Detection</li>
+                <li>Cyber Safety Awareness</li>
+                <li>Digital Asset Protection</li>
+            </ul>
+
+        </div>
+
+        <!-- MAIN CONTENT -->
+
+        <div class="main-content">
+
+            <h2>Main Content</h2>
+
+            <p>
+                CYBERFORT offers reliable security solutions to help
+                individuals and businesses protect their data
+                and digital systems. Our services include network
+                security, data protection, threat detection and
+                cybersecurity monitoring.
+            </p>
+
+            <br>
+
+            <p>
+                We aim to prevent unauthorized access, identify
+                suspicious activities and improve digital safety.
+                By following strong security practices, Cyberfort
+                helps create a secure and trustworthy online world.
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <p>© 2026 Cyberfort | Protecting Your Digital Assets</p>
+    </footer>
+
+</body>
+</html>
